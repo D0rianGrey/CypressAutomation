@@ -1,4 +1,5 @@
 /// <reference types ="Cypress" />
+import 'cypress-xpath';
 
 describe('My Second Test Suite', function() 
 {
@@ -22,10 +23,8 @@ $el.find('button').click()
 }
 })
 cy.get('.cart-icon > img').click()
+cy.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]").click
 cy.contains('PROCEED TO CHECKOUT').click()
 cy.contains('Place Order').click()
-
-    });
-
-
+});
 });
