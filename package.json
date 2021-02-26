@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/D0rianGrey/CypressAutomation#readme",
   "devDependencies": {
-    "cypress": "5.1.0",
-    "install": "^0.13.0",
-    "npm": "^6.14.8"
+    "cypress": "6.5.0",
+    "install": "0.13.0",
+    "npm": "7.6.0"
   }
 }
