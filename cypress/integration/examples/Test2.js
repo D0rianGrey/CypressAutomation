@@ -1,8 +1,6 @@
-import 'cypress-xpath';
-
 describe('My Second Test Suite', function () {
     it('My FirstTest case', function () {
-        cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/")
+        cy.visit("https://rahulshettyacademy.com/seleniumPractise/")
         cy.get('.search-keyword').type('ca')
         cy.wait(2000)
 //selenium get hit url in browser, cypress get acts like findElement of selenium
@@ -16,8 +14,8 @@ describe('My Second Test Suite', function () {
             }
         })
         cy.get('.cart-icon > img').click()
-        cy.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]").click
+        cy.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]").click();
         cy.contains('PROCEED TO CHECKOUT').click()
-        cy.contains('Place Order').click()
+        //cy.contains('Place Order').click()
     });
 });

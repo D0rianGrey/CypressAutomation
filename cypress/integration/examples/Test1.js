@@ -1,5 +1,3 @@
-import 'cypress-xpath';
-
 describe('My First Test Suite', function () {
     it('My First Test case', function () {
         cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/")
@@ -13,7 +11,6 @@ describe('My First Test Suite', function () {
         });
         //cy.contains('ADD TO CARD');
         cy.get('@productLocator').find('.product').each(($el, index, $list) => {
-
             const textVeg = $el.find('h4.product-name').text();
             if (textVeg.includes('Cashews')) {
                 $el.find('button').click();
