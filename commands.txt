@@ -1,4 +1,1 @@
 ./node_modules/.bin/cypress open
-
-course:
-https://www.udemy.com/course/cypress-tutorial
