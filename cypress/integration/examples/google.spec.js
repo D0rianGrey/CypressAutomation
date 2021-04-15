@@ -28,6 +28,19 @@ describe("Google", () => {
     console.log(b);
 
     assert.notEqual(a, b);
+    cy.get(".RNmpXc").as("button");
+    cy.get("@button")
+      .attribute("data-ved")
+      .then((attribute) => {
+        cy.log(attribute);
+      });
+
+    cy.get("@button")
+      .invoke("attr", "data-ved")
+      .then((text) => {
+        cy.log(text);
+      });
+
     //expect(a).equal(b);
 
     //cy.get(".gNO89b").val();
